@@ -10,7 +10,6 @@ body {
   height: 100vh;
   background-image: url(https://images.pexels.com/photos/18390248/pexels-photo-18390248/free-photo-of-blossoms-on-a-tree-against-the-sky.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
   background-repeat: no-repeat;
-  background-position: center;
 background-size: cover;
      position: relative; 
   overflow: hidden;   
@@ -25,7 +24,7 @@ body::before {
   background-repeat: inherit;
   background-position: inherit;
   background-size: inherit;
-  filter: blur(4px);
+  filter: blur(2px);
   pointer-events: none;
 }
 
@@ -41,6 +40,7 @@ body::before {
   padding: 20px 30px;
   position: relative;
   z-index: 1;
+  opacity: 0.8;
 }
 
 .title {
@@ -65,7 +65,7 @@ body::before {
   border: 1px solid #c0c0c0;
   outline: 0 !important;
   box-sizing: border-box;
-  padding: 12px 15px;
+  padding: 12px;
 }
 
 .page-link {
@@ -89,7 +89,7 @@ body::before {
 }
 
 .form-btn {
-  padding: 10px 15px;
+  padding: 13px ;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   border-radius: 20px;
@@ -113,7 +113,7 @@ body::before {
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.sign-up-link {
+.sign-up-link a {
   margin-left: 1px;
   font-size: 11px;
   text-decoration: underline;
@@ -138,7 +138,7 @@ body::before {
     .google-login-button {
   border-radius: 20px;
   box-sizing: border-box;
-  padding: 10px 15px;
+  padding: 13px 15px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
         rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   cursor: pointer;
