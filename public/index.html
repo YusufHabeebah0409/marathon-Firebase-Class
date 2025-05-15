@@ -4,16 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mordern Todo App Sign up</title>
+  <!-- Favicon Link -->
   <link rel="shortcut icon" href="./favicon-32x32.png" type="image/x-icon">
+  <!-- CSS Style link  -->
   <link rel="stylesheet" href="./CSS/index.css">
+  <!-- Toastify CSS  -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 <body>
  <div class="form-container">
       <p class="title">Welcome back</p>
       <form class="form">
-        <input type="text" class="input" placeholder="User Name" >
-        <input type="email" class="input" placeholder="Email">
-        <input type="password" class="input" placeholder="Password">
+        <input type="text" class="input" placeholder="User Name" id="userNameSignUp">
+        <input type="email" class="input" placeholder="Email" id="userEmailSignUp">
+        <input type="password" class="input" placeholder="Password" id="userPasswordSignUp">
         <button type="button" class="form-btn" onclick="btnSignUp()">Sign Up</button>
       </form>
       <p class="sign-up-label">
@@ -42,6 +46,11 @@
         </div>
       </div>
     </div>
+
+    
+<!-- Toastify JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+     <!-- Firebase Script link  -->
     <script src="./Script/script.js" type="module"></script>
 </body>
 </html>
